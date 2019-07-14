@@ -233,6 +233,7 @@ def QuantumEntanglement(val):
         t.cx(q0,q1)
         t.measure(q0, c0)
         t.measure(q1, c1)
+
         return t
     elif val==3:
         t = QuantumCircuit(q0, q1,q2, c0, c1,c2)
@@ -243,6 +244,7 @@ def QuantumEntanglement(val):
         t.measure(q1, c1)
         t.measure(q2, c2)
         return t
+    
     return QuantumCirct(val)
 
 
@@ -257,7 +259,6 @@ def QuantumCirct (val):
         t.h(q0)
         t.measure(q0, c0)
         circ = circ + t
-    # circ.draw(filename=r'C:\Users\ahmed\Documents\projects\quantum_relm\Bohr\try.jpg',output='mpl')
     return circ
 
 
