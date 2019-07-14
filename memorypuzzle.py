@@ -88,11 +88,11 @@ def main():
         if Mode ==True :
             color1=WHITE
             color2=BLACK
-            arrow= pygame.image.load(r'C:\Users\ahmed\Documents\projects\quantum_relm\Quantum-Cards\arrow_inverted.png').convert_alpha()
+            arrow= pygame.image.load('./arrow_inverted.png').convert_alpha()
         else:
             color1=BLACK
             color2=WHITE
-            arrow= pygame.image.load(r'C:\Users\ahmed\Documents\projects\quantum_relm\Quantum-Cards\arrow.png').convert_alpha()
+            arrow= pygame.image.load('./arrow.png').convert_alpha()
 
         GUI(color1,color2,arrow)
         BOXCOLOR = color1
