@@ -61,7 +61,7 @@ def main():
          
     mousex = 0 # used to store x coordinate of mouse event
     mousey = 0 # used to store y coordinate of mouse event
-    pygame.display.set_caption('Quantum Game')
+    pygame.display.set_caption('Quantum-Cards')
     level =1
     Shapes = generateShapes()
     mainBoard = getRandomizedBoard()
@@ -264,6 +264,7 @@ def QuantumCirct (val):
 def Measure (circ):
     job2 = execute(circ, simulator, shots=1, memory=True)
     counts = job2.result().get_memory(circ)
+    
     return counts[0].replace(" ", "")
 
 def generateShapes():
