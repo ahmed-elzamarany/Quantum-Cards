@@ -26,7 +26,7 @@ When you click "Measure" you excute the circuit and every qubit will be collabse
 So, everytime you choose a box for measurement ,the hidden icons will change XD
 When simulating the circuit we use the Aer simulater that is provided via Qiskit library 
 Here is a sample circuit from the first level:
-
+![alt text](https://github.com/ahmed-elzamarany/Quantum-Cards/blob/master/qc.jpg)
 
 ### Entanglement
 Here where the magic happens!
@@ -34,4 +34,5 @@ Here where the magic happens!
 When you choose "Entanglement" before measurement you increase your chances of winning up to 50% *your chances in winning in 1st level is 50% , 2nd level is 25% ,3rd level is 12.5%* by excuting different circuit that adds CNOT to entangle the qubits and reduce the outcomes of the circuits to 0's and 1's only *eg: "00" ,"11","000","111"* 
 
 This is an example of the different circuit :
+![alt text](https://github.com/ahmed-elzamarany/Quantum-Cards/blob/master/qc2.jpg)
 
