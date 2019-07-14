@@ -125,8 +125,8 @@ def main():
         elif  boxx=="Measure" and boxy== None and mouseClicked and secondSelection :
 
             if Ental:
-                qc1=QuantumEntangelte(level)
-                qc2=QuantumEntangelte(level)
+                qc1=QuantumEntanglement(level)
+                qc2=QuantumEntanglement(level)
                 Ental=False
             else:
                 qc1=QuantumCirct(level)
@@ -198,7 +198,7 @@ def GUI(color1,color2,arrow):
         DISPLAYSURF.blit(text,((WINDOWWIDTH - text.get_width()) // 2, 0))
         DISPLAYSURF.blit(button("Mode",buttonModeWidth, buttonModeHeight,160,40,color1,ORANGE,color2),(buttonModeWidth+55, (buttonModeHeight)+15))
         DISPLAYSURF.blit(button("Measure",buttonNextWidth,buttonMeasureHeight,160,40,color1,ORANGE,color2),(buttonNextWidth+(( 160) // 4), buttonMeasureHeight+(( 40) // 4)))
-        DISPLAYSURF.blit(button("entanglement",buttonEtalWidth,buttonEtalHeight,160,40,color1,ORANGE,color2),(buttonEtalWidth+(( 160) // 16), buttonMeasureHeight+(( 40) // 5)))
+        DISPLAYSURF.blit(button("Entanglement",buttonEtalWidth,buttonEtalHeight,160,40,color1,ORANGE,color2),(buttonEtalWidth+(( 160) // 16), buttonMeasureHeight+(( 40) // 5)))
         TextLevel=myfont.render("Level:"+str(level), False,color1)   
         scoreText = myfont.render("Score:"+str(score), False,color1) 
         counter=0
@@ -220,7 +220,7 @@ def generateRevealedBoxesData(val):
         revealedBoxes.append([val] * BOARDHEIGHT)
     return revealedBoxes
 
-def QuantumEntangelte(val):
+def QuantumEntanglement(val):
     q0 = QuantumRegister(1)
     c0 = ClassicalRegister(1)
     q1 = QuantumRegister(1)
